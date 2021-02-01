@@ -9,3 +9,9 @@ test('Calculate Object Creation', () => {
     expect(calculation.op).toBe("Sum");
 });
 
+test('Test Get Results function', () => {
+
+    let calculation = new Calculation(1,2,"Sum");
+    expect(calculation.GetResults()).toBe(3);
+});
+
