@@ -7,7 +7,7 @@ test('Calculator Adding two numbers', () => {
 
     expect(calculation.a).toBe(1);
     expect(calculation.b).toBe(2);
-    expect(calculation.op).toBe("sum");
+    expect(calculation.op).toBe("Sum");
     expect(calculation.GetResults()).toBe( 3);
 });
 
