@@ -6,6 +6,19 @@ class Calculator{
         //this is how you create a new object and this is good for data
         return new Calculation(a, b, "Sum");
     }
+    static Difference(a, b){
+        //this is how you create a new object and this is good for data
+        return new Calculation(a, b, "Subtract");
+    }
+    static Multiply(a, b){
+        //this is how you create a new object and this is good for data
+        return new Calculation(a, b, "Multiply");
+    }
+
+    static Divide(a, b){
+        //this is how you create a new object and this is good for data
+        return new Calculation(a, b, "Divide");
+    }
 
 }
 
