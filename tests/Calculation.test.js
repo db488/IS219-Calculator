@@ -1,4 +1,5 @@
 const Calculation = require('../src/models/Calculation');
+const Sum = require('../src/Operations/Sum');
 
 
 test('Calculate Object Creation', () => {
@@ -11,7 +12,7 @@ test('Calculate Object Creation', () => {
 
 test('Test Get Results function', () => {
 
-    let calculation = new Calculation(1,2,"Sum");
+    let calculation = new Calculation(1,2,Sum);
     expect(calculation.GetResults()).toBe(3);
 });
 

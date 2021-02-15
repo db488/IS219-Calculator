@@ -25,7 +25,6 @@ test('Calculator Multiply Two Number', () => {
     //expect is used to test if the results are correct
     expect(calculation.a).toBe(2);
     expect(calculation.b).toBe(3);
-    expect(calculation.op).toBe("Multiply");
     expect(calculation.GetResults()).toBe( 6);
 });
 
@@ -35,6 +34,5 @@ test('Calculator Divide Two Number', () => {
     //expect is used to test if the results are correct
     expect(calculation.a).toBe(10);
     expect(calculation.b).toBe(2);
-    expect(calculation.op).toBe("Divide");
     expect(calculation.GetResults()).toBe( 5);
 });
