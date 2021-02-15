@@ -14,4 +14,5 @@ class Calculation{
 
 
 
+
 module.exports = Calculation;
