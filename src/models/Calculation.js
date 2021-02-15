@@ -7,7 +7,7 @@ class Calculation{
     }
 
     GetResults(){
-        return this.op(this.a, this.b);
+        return op(this.a, this.b);
 
     }
 }
