@@ -1,14 +1,16 @@
 const MathOperations = require('./Operations/MathOperations');
 const Calculation = require('./models/Calculation')
+const Sum = require('./Operations/Sum');
+const Subtract = require('./Operations/Subtract');
 class Calculator{
     //static methods can be called without instatiating and are good for actions
     static Sum(a, b){
         //this is how you create a new object and this is good for data
-        return new Calculation(a, b, "Sum");
+        return new Calculation(a, b, Sum);
     }
     static Difference(a, b){
         //this is how you create a new object and this is good for data
-        return new Calculation(a, b, "Subtract");
+        return new Calculation(a, b, Subtract);
     }
     static Multiply(a, b){
         //this is how you create a new object and this is good for data

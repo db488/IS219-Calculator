@@ -7,7 +7,6 @@ test('Calculator Adding two numbers', () => {
     //expect is used to test if the results are correct
     expect(calculation.a).toBe(1);
     expect(calculation.b).toBe(2);
-    expect(calculation.op).toBe("Sum");
     expect(calculation.GetResults()).toBe( 3);
 });
 
@@ -17,7 +16,6 @@ test('Calculator Subtracting two numbers', () => {
     //expect is used to test if the results are correct
     expect(calculation.a).toBe(2);
     expect(calculation.b).toBe(1);
-    expect(calculation.op).toBe("Subtract");
     expect(calculation.GetResults()).toBe( 1);
 });
 

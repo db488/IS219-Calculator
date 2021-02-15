@@ -1,4 +1,4 @@
-const Calculation = require('../src/models/calculation');
+const Calculation = require('../src/models/Calculation');
 
 
 test('Calculate Object Creation', () => {
