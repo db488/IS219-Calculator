@@ -1,23 +1,39 @@
-const MathOperations = require('./Operations/MathOperations');
-const Calculation = require('./models/Calculation')
+const Sum = require('../src/Operations/Sum');
+const Difference = require('./Operations/Difference');
+const Product = require('./Operations/Product');
+const Quotient = require('./Operations/Quotient');
+const Calculation = require('./models/Calculation');
+
+
+
 class Calculator{
+
+    static Calculations = []
     //static methods can be called without instatiating and are good for actions
     static Sum(a, b){
         //this is how you create a new object and this is good for data
-        return new Calculation(a, b, "Sum");
+        let calculation = new Calculation(a, b, Sum);
+        this.Calculations.push(Calculation);
+        return calculation.GetResults();
     }
     static Difference(a, b){
         //this is how you create a new object and this is good for data
-        return new Calculation(a, b, "Subtract");
+        let calculation = new Calculation(a, b, Difference);
+        this.Calculations.push(Calculation);
+        return calculation.GetResults();
     }
-    static Multiply(a, b){
+    static Product(a, b){
         //this is how you create a new object and this is good for data
-        return new Calculation(a, b, "Multiply");
+        let calculation = new Calculation(a, b, Product);
+        this.Calculations.push(Calculation);
+        return calculation.GetResults();
     }
 
-    static Divide(a, b){
+    static Quotient(a, b){
         //this is how you create a new object and this is good for data
-        return new Calculation(a, b, "Divide");
+        let calculation = new Calculation(a, b, Quotient);
+        this.Calculations.push(Calculation);
+        return calculation.GetResults();
     }
 
 }
