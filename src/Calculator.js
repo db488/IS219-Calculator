@@ -1,4 +1,3 @@
-const MathOperations = require('./Operations/MathOperations');
 const Calculation = require('./models/Calculation')
 const Sum = require('./Operations/Sum');
 const Subtract = require('./Operations/Subtract');
