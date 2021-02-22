@@ -30,11 +30,24 @@ class Calculator extends Calculation{
 Here in Calculator.js we are able to add past calculations into this array without having to open the file to push these calculations.  This is very helpful since in the future it can be used to extend possible additions where needed.
 
 <b>L : Liskov Substitution Principle</b>
+Still using Sum, with the two different files, both in completely different locations within the project, calling either one will still result in the project compiling.
 ```
-Some example here
+Calculator.js's Sum()
+static Sum(a,b) {
+        let calculation = Calculation.Create(a,b,Sum);
+        this.addCalculation(calculation);
+        return calculation;
+    }
 ```
-Explaination
-[Extra Coffee Example](https://stackify.com/solid-design-liskov-substitution-principle/)
+```
+Sum.js
+function Sum(a, b){
+    return a+b;
+}
+```
+The superclass can be replaced with objects of its subclass. This is what I understand the Liskov principle to be.  The subclass, Sum.js has less restrictive rules, but functions the same way that Calculator.js would.   
+
+[Coffee Example](https://stackify.com/solid-design-liskov-substitution-principle/)
 
 <b>I : Interface Segregation Principle</b>
 ```
