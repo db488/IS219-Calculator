@@ -21,9 +21,13 @@ In the Sum() example above, it simply adds two numbers together and then returns
 <b>O : Open-Closed Principle</b>
 This can be summed up by being able to modify variables and placeholders within different files without actually having to open the file.
 ```
-Some example here
+class Calculator extends Calculation{
+    static Calculations = [];
+    static addCalculation(calculation){
+        Calculator.Calculations.push(calculation);
+    }...}
 ```
-Explaination
+Here in Calculator.js we are able to add past calculations into this array without having to open the file to push these calculations.  This is very helpful since in the future it can be used to extend possible additions where needed.
 
 <b>L : Liskov Substitution Principle</b>
 ```
