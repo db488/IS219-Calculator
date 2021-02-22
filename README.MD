@@ -9,9 +9,11 @@ FINALLY GOT TravisCI & Coveralls connected!!!
 
 S.O.L.I.D
 
-S : Single Responsibility Principle
+<b>S : Single Responsibility Principle</b>
 ```
-TEST
+function Sum(a, b){
+    return a+b;
+}
 ```
 
 Here we want to make sure that each function has a single job.  In the Sum() example above, it simply adds two numbers together and then returns the sum.  This is keeping the function from doing more than its sole purpose. 
