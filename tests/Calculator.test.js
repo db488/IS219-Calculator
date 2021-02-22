@@ -12,7 +12,7 @@ test('Calculator Adding two numbers', () => {
 
 test('Calculator Subtracting two numbers', () => {
 
-    let calculation = Calculator.Difference(2, 1);
+    let calculation = Calculator.Subtract(2, 1);
     //expect is used to test if the results are correct
     expect(calculation.a).toBe(2);
     expect(calculation.b).toBe(1);
