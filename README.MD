@@ -5,5 +5,8 @@ Step 1: Clone Repo\
 Step 2: Run 'npm install'
 
 
-[Anything I do to get Travis to build spits out the same error message]\
-["The command "npm run coveralls" exited with 1."]
+FINALLY GOT TravisCI & Coveralls connected!!!
+
+S.O.L.I.D
+
+S : 
