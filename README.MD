@@ -34,6 +34,7 @@ Here in Calculator.js we are able to add past calculations into this array witho
 Some example here
 ```
 Explaination
+[Extra Coffee Example](https://stackify.com/solid-design-liskov-substitution-principle/)
 
 <b>I : Interface Segregation Principle</b>
 ```
