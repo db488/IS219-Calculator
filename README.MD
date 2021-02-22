@@ -9,4 +9,9 @@ FINALLY GOT TravisCI & Coveralls connected!!!
 
 S.O.L.I.D
 
-S : 
+S : Single Responsibility Principle
+```
+TEST
+```
+
+Here we want to make sure that each function has a single job.  In the Sum() example above, it simply adds two numbers together and then returns the sum.  This is keeping the function from doing more than its sole purpose. 
