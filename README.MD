@@ -9,7 +9,7 @@ FINALLY GOT TravisCI & Coveralls connected!!!
 
 S.O.L.I.D
 
-<b>S : Single Responsibility Principle</b>
+<b>S : Single Responsibility Principle</b><br>
 Here we want to make sure that each function has a single job.  
 ```
 function Sum(a, b){
@@ -18,7 +18,7 @@ function Sum(a, b){
 ```
 In the Sum() example above, it simply adds two numbers together and then returns the sum.  This is keeping the function from doing more than its sole purpose. 
 
-<b>O : Open-Closed Principle</b>
+<b>O : Open-Closed Principle</b><br>
 This can be summed up by being able to modify variables and placeholders within different files without actually having to open the file.
 ```
 class Calculator extends Calculation{
@@ -29,7 +29,7 @@ class Calculator extends Calculation{
 ```
 Here in Calculator.js we are able to add past calculations into this array without having to open the file to push these calculations.  This is very helpful since in the future it can be used to extend possible additions where needed.
 
-<b>L : Liskov Substitution Principle</b>
+<b>L : Liskov Substitution Principle</b><br>
 Still using Sum, with the two different files, both in completely different locations within the project, calling either one will still result in the project compiling.
 ```
 Calculator.js's Sum()
@@ -49,13 +49,13 @@ The superclass can be replaced with objects of its subclass. This is what I unde
 
 [Coffee Example](https://stackify.com/solid-design-liskov-substitution-principle/)
 
-<b>I : Interface Segregation Principle</b>
+<b>I : Interface Segregation Principle</b><br>
 ```
 Some example here
 ```
 Explaination
 
-<b>D : Dependency Inversion Principle</b>
+<b>D : Dependency Inversion Principle</b><br>
 ```
 Some example here
 ```
