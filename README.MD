@@ -50,14 +50,19 @@ The superclass can be replaced with objects of its subclass. This is what I unde
 [Coffee Example](https://stackify.com/solid-design-liskov-substitution-principle/)
 
 <b>I : Interface Segregation Principle</b><br>
+This can be described as splitting your software into different independent parts. Adding to that, you want to make sure that you are not leaving unused code throughout your program. Let's look at Sum.js once more:
 ```
-Some example here
+function Sum(a, b){
+    return a+b;
+}
+module.exports = Sum;
 ```
-Explaination
+Each line should have a purpose. Within the /src/Operations directory, each operation is split into it's own file.  From here, each file does one job, as quickly and efficently as possible.  The function takes in it's two opperands and adds them together.  It passes it up to wherever it was called, and thats it.  Nothing fancy or overwhelming. 
 
 <b>D : Dependency Inversion Principle</b><br>
+Both high and low level modules should depend on abstractions and those should not depend on details. This meaning that everything should be able to be reused and unaffected by changes in the lower end of hierachy. 
 ```
-Some example here
+let calculation = Calculation.Create(a,b,Sum);
 ```
-Explaination
+While keeping everything described above, the Calculation.Create simply needs the two opperands, and the instructions on what to do with them. This can be reused and all the opperations does not change how this function is called, or what it does with them.
 
