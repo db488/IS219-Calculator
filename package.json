@@ -1,8 +1,8 @@
 {
-  "name": "IS219 Calculator",
+  "name": "IS219-Calculator",
   "version": "1.0.0",
   "description": "My First Node App",
-  "main": "index.js",
+  "main": "src/Index.js",
   "scripts": {
     "test": "jest",
     "start": "node src/Calculator.js",
@@ -10,8 +10,8 @@
     "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "keywords": [],
-  "author": "Derek Bradshaw",
-  "email": "db488@njit.edu",
+  "author": "Keith Williams",
+  "email": "keith@webizly.com",
   "license": "ISC",
   "dependencies": {
     "csv": "^5.3.2",
@@ -20,5 +20,16 @@
   "devDependencies": {
     "coveralls": "^3.1.0",
     "jest": "^25.5.4"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaw393939/IS219CalcNew.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaw393939/IS219CalcNew/issues"
+  },
+  "homepage": "https://github.com/kaw393939/IS219CalcNew#readme"
 }
