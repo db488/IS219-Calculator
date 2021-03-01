@@ -72,6 +72,7 @@ While keeping everything described above, the Calculation.Create simply needs th
 <h2>OOP Design Patterns:</h2><br>
 <b>Creational Patterns  -   Factory Method</b><br>
 The factory method replaces direct object creation with a factory method.  So, instead of using one file such as "calculate" that might do every operation all within one file it would use a subclass to do said calculation. 
+
 ```
 static Sum(a,b) {
         let calculation = Calculation.Create(a,b,Sum);
