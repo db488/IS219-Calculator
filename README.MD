@@ -78,7 +78,7 @@ static Sum(a,b) {
         this.addCalculation(calculation);
         return calculation;
     }
-  ```
+```
 This creates a new Calculation, specific for the Sum of the two passed numbers.  
 
 <b>Structural Patterns  -   ?</b><br>
