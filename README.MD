@@ -71,7 +71,7 @@ While keeping everything described above, the Calculation.Create simply needs th
 <br>
 <h2>OOP Design Patterns:</h2><br>
 <b>Creational Patterns  -   Factory Method</b><br>
-The factory method replaces direct object creation with a factory method.  So, instead of using one file such as "calculate" that might do every operation all within one file it would use a subclass to do said calculation. Looking at Calculator.js,
+The factory method replaces direct object creation with a factory method.  So, instead of using one file such as "calculate" that might do every operation all within one file it would use a subclass to do said calculation. 
 ```
 static Sum(a,b) {
         let calculation = Calculation.Create(a,b,Sum);
@@ -79,7 +79,7 @@ static Sum(a,b) {
         return calculation;
     }
 ```
-This creates a new Calculation, specific for the Sum of the two passed numbers.  
+Looking at Calculator.js, this creates a new Calculation, specific for the Sum of the two passed numbers.  
 
 <b>Structural Patterns  -   ?</b><br>
 <b>Behavioral Patterns  -   Chain of Responsibility</b><br>
