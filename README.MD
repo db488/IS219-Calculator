@@ -67,10 +67,20 @@ let calculation = Calculation.Create(a,b,Sum);
 While keeping everything described above, the Calculation.Create simply needs the two operands, and the instructions on what to do with them. This can be reused and all the operations  does not change how this function is called, or what it does with them.
 
 <br>
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 <br>
 <h2>OOP Design Patterns:</h2><br>
 <b>Creational Patterns  -   Factory Method</b><br>
+The factory method replaces direct object creation with a factory method.  So, instead of using one file such as "calculate" that might do every operation all within one file it would use a subclass to do said calculation. Looking at Calculator.js,
+```
+static Sum(a,b) {
+        let calculation = Calculation.Create(a,b,Sum);
+        this.addCalculation(calculation);
+        return calculation;
+    }
+  ```
+This creates a new Calculation, specific for the Sum of the two passed numbers.  
+
 <b>Structural Patterns  -   ?</b><br>
 <b>Behavioral Patterns  -   Chain of Responsibility</b><br>
 
