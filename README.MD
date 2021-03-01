@@ -66,3 +66,10 @@ let calculation = Calculation.Create(a,b,Sum);
 ```
 While keeping everything described above, the Calculation.Create simply needs the two operands, and the instructions on what to do with them. This can be reused and all the operations  does not change how this function is called, or what it does with them.
 
+<br>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+<br>
+<H2>OOP Design Patterns:</h2><br>
+
+
+
