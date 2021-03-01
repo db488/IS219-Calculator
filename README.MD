@@ -7,7 +7,7 @@ Step 2: Run 'npm install'
 
 FINALLY GOT TravisCI & Coveralls connected!!!
 
-S.O.L.I.D
+<h2>S.O.L.I.D</h2>
 
 <b>S : Single Responsibility Principle</b><br>
 Here we want to make sure that each function has a single job.  
@@ -69,7 +69,9 @@ While keeping everything described above, the Calculation.Create simply needs th
 <br>
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 <br>
-<H2>OOP Design Patterns:</h2><br>
-
+<h2>OOP Design Patterns:</h2><br>
+<b>Creational Patterns  -   Factory Method</b><br>
+<b>Structural Patterns  -   ?</b><br>
+<b>Behavioral Patterns  -   Chain of Responsibility</b><br>
 
 
